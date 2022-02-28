@@ -222,7 +222,7 @@ $ catkin_init_workspace
 
 ```
 $ cd /home/workspace/catkin_ws/src
-$ git clone https://github.com/umtclskn/RoboND-Where-Am-I-Project-P3
+$ git clone https://github.com/Lameeselbakr55/Udacity_Robo_SW_ND_P3_Where_Am_I.git
 ```
 
 ### Build Package
