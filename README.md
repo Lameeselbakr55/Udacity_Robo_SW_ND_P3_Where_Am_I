@@ -1,6 +1,8 @@
 # Udacity_Robo_SW_ND_P3_Where_Am_I
 Use the Adaptive Monte Carlo Localization algorithm in Ros to localize my robot. it is project 3 for Udacity Robotics Software Engineer Nanodegree Program 
 
+![Project 3](https://user-images.githubusercontent.com/98288035/156074226-07220706-32e5-4a98-ad8d-f978e6748957.gif)
+
 
 # Project Overview
 
@@ -155,7 +157,7 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 
 # Project Directory Structure
 
-        .[RoboND-Where-Am-I-Project-P3]            # Where Am I Project
+        .[Udacity_Robo_SW_ND_P3_Where_Am_I]            # Where Am I Project
 	├── my_robot                               # my_robot package        
 	│   │   ├── config                         # config folder for configuration files   
 	│   │   │   ├── base_local_planner_params.yaml
@@ -169,23 +171,30 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 	│   │   ├── maps                           	   # maps folder for maps
 	│   │   │   ├── map.pgm
 	│   │   │   ├── map.yaml
-	│   │   ├── meshes                         # meshes folder for sensors
+	│   │   ├── meshes                           # meshes folder for sensors
 	│   │   │   ├── hokuyo.dae
-	│   │   ├── rviz                           # rviz folder for rviz configuration files
-	│   │   │   ├── default.rviz
-	│   │   ├── urdf                           # urdf folder for xarco files
+	│   │   ├── models                           # models folder for models files
+	│   │   │   ├── ball
+	│   │   │   │   ├── model.config
+	│   │   │   │   ├── model.sdf
+	│   │   │   ├── my_Buildings
+	│   │   │   │   ├── model.config
+	│   │   │   │   ├── model.sdf	              
+	│   │   ├── urdf                             # urdf folder for xarco files
 	│   │   │   ├── my_robot.gazebo
 	│   │   │   ├── my_robot.xacro
 	│   │   ├── worlds                         # world folder for world files
 	│   │   │   ├── empty.world
-	│   │   │   ├── myworld.world
+	│   │   │   ├── New_building.world
+	│   │   │   ├── office.world	
+	│   │   │   ├── robot_chaser.world	
+	│   │   │   ├── robot_with_office.world		
 	│   │   ├── CMakeLists.txt                 # compiler instructions
 	│   │   ├── package.xml                    # package info
 	│   ├── pgm_map_creator                    # pgm_map_creator        
 	│   │   ├── launch                         # launch folder for launch files   
 	│   │   │   ├── request_publisher.launch
 	│   │   ├── maps                           # maps folder for generated maps
-	│   │   │   ├── Backup_map.pgm
 	│   │   │   ├── map.pgm
 	│   │   ├── msgs                           # msgs folder for communication files
 	│   │   │   ├── CMakeLists.txt
@@ -193,8 +202,7 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 	│   │   ├── src                            # src folder for main function
 	│   │   │   ├── collision_map_creator.cc
 	│   │   │   ├── request_publisher.cc
-	│   │   ├── world                          # world folder for world files
-	│   │   │   ├── myoffice.world
+	│   │   ├── world                          # world folder for world file
 	│   │   │   ├── udacity_mtv
 	│   │   ├── CMakeLists.txt                 # compiler instructions
 	│   │   ├── LICENSE                        # License for repository
